@@ -182,7 +182,7 @@ SetItems:
 		oddDays := Floor(Mod(oddMonths, 1) * 4)
 		GUIControl,, dispYear, %millionYearsAgo%
 		GuiControl,, Myearp, 1
-		GuiControl,, dispDate, % "…" Substr("000000" floor(OddMonths), -6) 
+		GuiControl,, dispDate, % "…" Substr("000000" floor(OddMonths), -5) 
 		GuiControl,, dmonsp, 1
 		GUIControl,, dispTime, % seasons[oddDays + 1]
 		GuiControl,, tseasp, 1
