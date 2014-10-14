@@ -206,7 +206,7 @@ SetItems:
 		{
 			years *= -1
 			GuiControl,, bcp, 1
-			GUIcontrol,, DispYear, %years%
+			GUIcontrol,, DispYear, % years + 1
 		}
 		else
 		{
