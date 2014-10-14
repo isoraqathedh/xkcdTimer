@@ -117,7 +117,7 @@ SetItems:
 	now := UseThisTime ? setNow : A_Now
 	msec := A_Msec / 1000
 	stashedFormat := A_FormatFloat
-	SetFormat FloatFast, 0.9
+	SetFormat FloatFast, 012.9
 	FormatTime, oYear, %now%, yyyy
 	FormatTime, oDate, %now%, MMM dd
 	FormatTime, oTime, %now%, HH:mm:ss
