@@ -1,4 +1,4 @@
-﻿#SingleInstance Ignore
+﻿#SingleInstance off
 seasons := ["Winter", "Autumn", "Summer", "Spring"]
 suffixes := ["", "k", "M", "G", "T", "P", "E"]
 
