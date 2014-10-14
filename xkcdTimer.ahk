@@ -217,6 +217,7 @@ SetItems:
 		yearsBack := -(timeBackwards - floor(timeBackwards)) * 365
 		EnvAdd now, %yearsBack%, days
 		FormatTime, oDate, %now%, MMM dd
+		GuiControl,, dtimep, 1
 		FormatTime, oTime, %now%, HH:mm:ss
 		GUIControl,, dispYear, %years%
 		GUIControl,, dispDate, %oDate%
