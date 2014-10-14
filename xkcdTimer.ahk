@@ -1,6 +1,6 @@
 ﻿#SingleInstance Ignore
 seasons := ["Winter", "Autumn", "Summer", "Spring"]
-suffixes := ["", "k", "M", "G", "T"]
+suffixes := ["", "k", "M", "G", "T", "P", "E"]
 
 GUI font, s9, Segoe UI
 GUI add, DateTime, vFrom Choose20140916000000 gUpdateTotalTime, yyyy-MM-dd HH:mm:ss 
