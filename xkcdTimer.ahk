@@ -164,7 +164,8 @@ SetItems:
 	}
 	TimeBackwards := exp(20.3444 * percentage ** 3 + 3) - exp(3)
 	derivative := useSecondDeriv 
-		? - (exp(20.3444 * percentage ** 3) * percentage * (-74819.7 * percentage ** 3 - 2451.77) / (to - from) * 365 * 24 * 3600)
+		? 2451.76 * exp(20.3444 * percentage ** 3) * (to - from) * 365 * 24 * 3600 ** 3 * (now - from) * 365 * 24 * 3600 + 30.35166 * (now - from) * 365 * 24 * 3600 ** 4) / (to - from) * 365 * 24 * 3600 ** 6
+		; (74819.4 t^2 e^((20.3444 t^3)/k^3))/k^2
 		: 1225.88 * exp(20.3444 * percentage ** 3) * percentage ** 2 / (to - from) * 365 * 24 * 3600 - 1
 	for k, v in suffixes 
 	{
